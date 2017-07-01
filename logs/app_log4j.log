@@ -1,0 +1,1051 @@
+2016-04-13 09:02:54,096 com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration loadProperties - Error when loading properties file
+java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:418)
+	at java.util.Properties.load0(Properties.java:337)
+	at java.util.Properties.load(Properties.java:325)
+	at com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration.loadProperties(RestClientConfiguration.java:179)
+	at com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration.loadConfiguration(RestClientConfiguration.java:88)
+	at tagabukid.dtr.ViewerComponentExample$1.run(ViewerComponentExample.java:50)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:646)
+	at java.awt.EventQueue.access$000(EventQueue.java:84)
+	at java.awt.EventQueue$1.run(EventQueue.java:607)
+	at java.awt.EventQueue$1.run(EventQueue.java:605)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:616)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+2016-04-13 09:02:54,178 com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration loadConfiguration - The properties file was not loaded
+2016-04-13 09:03:37,400 com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration loadProperties - Error when loading properties file
+java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:418)
+	at java.util.Properties.load0(Properties.java:337)
+	at java.util.Properties.load(Properties.java:325)
+	at com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration.loadProperties(RestClientConfiguration.java:179)
+	at com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration.loadConfiguration(RestClientConfiguration.java:88)
+	at tagabukid.dtr.ViewerComponentExample$1.run(ViewerComponentExample.java:50)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:646)
+	at java.awt.EventQueue.access$000(EventQueue.java:84)
+	at java.awt.EventQueue$1.run(EventQueue.java:607)
+	at java.awt.EventQueue$1.run(EventQueue.java:605)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.AccessControlContext$1.doIntersectionPrivilege(AccessControlContext.java:87)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:616)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+2016-04-13 09:03:37,514 com.jaspersoft.jasperserver.jaxrs.client.core.RestClientConfiguration loadConfiguration - The properties file was not loaded
+2016-04-13 09:17:12,915 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 09:23:09,490 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/reports/samples/Cascading_multi_select_report.html?Cascading_name_single_select=A+%26+U+Stalker+Telecommunications%2C+Inc&page=1
+1 > Accept: application/json
+
+2016-04-13 09:23:11,559 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 403
+1 < Cache-Control: no-cache
+1 < Content-Type: application/json
+1 < Date: Wed, 13 Apr 2016 01:23:10 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 01:23:10 GMT;HttpOnly,JSESSIONID=341A122DF30692C2DA05EEDACCB02B68; Path=/jasperserver
+1 < Transfer-Encoding: chunked
+
+2016-04-13 09:56:05,684 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/reports/samples/Cascading_multi_select_report.html?Cascading_name_single_select=A+%26+U+Stalker+Telecommunications%2C+Inc&page=1
+1 > Accept: application/json
+
+2016-04-13 09:56:06,015 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 403
+1 < Cache-Control: no-cache
+1 < Content-Type: application/json
+1 < Date: Wed, 13 Apr 2016 01:56:05 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 01:56:05 GMT;HttpOnly,JSESSIONID=C9F0D2BD18880CA05B48037AE922054D; Path=/jasperserver
+1 < Transfer-Encoding: chunked
+
+2016-04-13 09:56:47,510 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/reports/samples/Cascading_multi_select_report.html?Cascading_name_single_select=A+%26+U+Stalker+Telecommunications%2C+Inc&page=1
+1 > Accept: application/json
+
+2016-04-13 09:56:53,650 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 18916
+1 < Content-Type: text/html
+1 < Date: Wed, 13 Apr 2016 01:56:53 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 01:56:47 GMT;HttpOnly,JSESSIONID=D358E3D33CFFB3643248299B18AF335F; Path=/jasperserver
+
+2016-04-13 09:56:54,238 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 09:56:58,216 class org.icepdf.core.pobjects.Document setInputStream - Cross reference deferred loading failed, will fall back to linear reading.
+2016-04-13 09:56:58,291 class org.icepdf.core.pobjects.Document setInputStream - Error loading PDF Document.
+java.lang.NullPointerException
+	at org.icepdf.core.pobjects.Document.loadDocumentViaLinearTraversal(Document.java:665)
+	at org.icepdf.core.pobjects.Document.setInputStream(Document.java:466)
+	at org.icepdf.core.pobjects.Document.setInputStream(Document.java:299)
+	at org.icepdf.ri.common.SwingController.openDocument(SwingController.java:1995)
+	at tagabukid.dtr.ViewerComponentExample$1.run(ViewerComponentExample.java:93)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2016-04-13 10:02:32,598 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/reports/samples/Cascading_multi_select_report.pdf?Cascading_name_single_select=A+%26+U+Stalker+Telecommunications%2C+Inc&page=1
+1 > Accept: application/json
+
+2016-04-13 10:02:33,581 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 21669
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:02:32 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:02:32 GMT;HttpOnly,JSESSIONID=FC57AE426373949D9CE9B04F7F0B80AF; Path=/jasperserver
+
+2016-04-13 10:02:33,795 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:02:34,817 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:02:35,619 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:05:25,225 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=1&DEPARTMENT_ID=1&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:05:25,396 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 404
+1 < Cache-Control: no-cache
+1 < Content-Type: application/json
+1 < Date: Wed, 13 Apr 2016 02:05:24 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:05:24 GMT;HttpOnly,JSESSIONID=0D60C6D1A12ADEFAB84E85C9D995F2F9; Path=/jasperserver
+1 < Transfer-Encoding: chunked
+
+2016-04-13 10:06:27,589 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=1&DEPARTMENT_ID=1&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:06:27,889 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 404
+1 < Cache-Control: no-cache
+1 < Content-Type: application/json
+1 < Date: Wed, 13 Apr 2016 02:06:27 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:06:27 GMT;HttpOnly,JSESSIONID=E7169345256A84C73A0B54CE770A8C20; Path=/jasperserver
+1 < Transfer-Encoding: chunked
+
+2016-04-13 10:06:38,154 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=1&DEPARTMENT_ID=1&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:06:44,475 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 377059
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:06:43 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:06:37 GMT;HttpOnly,JSESSIONID=43B4BBF4E924ABDDAEBF209B03DDC593; Path=/jasperserver
+
+2016-04-13 10:06:44,903 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:06:45,929 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:06:46,564 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:08:08,291 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=1&DEPARTMENT_ID=1&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:08:14,611 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 377059
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:08:14 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:08:07 GMT;HttpOnly,JSESSIONID=6EB6E7788EFD982EC4C65570F4CD92CB; Path=/jasperserver
+
+2016-04-13 10:08:14,929 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:08:15,835 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:08:16,535 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:08:57,874 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=2&DEPARTMENT_ID=1&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:09:04,642 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369784
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:09:04 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:08:57 GMT;HttpOnly,JSESSIONID=AD824F12284A39C2C6479DC7E6E3C09D; Path=/jasperserver
+
+2016-04-13 10:09:04,961 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:09:05,874 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:09:06,547 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:13:37,687 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=2&DEPARTMENT_ID=1&UserId=2&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:13:44,577 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369784
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:13:43 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:13:37 GMT;HttpOnly,JSESSIONID=F6710A65604AD71E56CCD5180CE686F7; Path=/jasperserver
+
+2016-04-13 10:13:44,906 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:13:45,982 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:13:46,792 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:19:59,481 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=2&DEPARTMENT_ID=1&DTR_YEAR=2016&USERID=1&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:20:06,432 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369785
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:20:05 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:19:59 GMT;HttpOnly,JSESSIONID=9FBF1112F3352651FD0953F5DFDCA8E0; Path=/jasperserver
+
+2016-04-13 10:20:06,940 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:20:07,977 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:20:08,695 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:20:43,966 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:20:50,013 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369595
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:20:49 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:20:43 GMT;HttpOnly,JSESSIONID=E91BD0ABEF2BA043B5B00F670C959F86; Path=/jasperserver
+
+2016-04-13 10:20:50,367 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:20:51,463 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:21:05,742 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:25:26,199 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=test%2Btest&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:25:33,024 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376714
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:25:32 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:25:25 GMT;HttpOnly,JSESSIONID=1332B9E0BF064F96ADE4DE02BF5B8E86; Path=/jasperserver
+
+2016-04-13 10:25:33,345 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:25:34,378 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:25:35,131 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 10:26:41,706 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=AIDA+B.+LOVERES%3ASupervising+Administrative+Officer&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 10:26:47,593 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376724
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 02:26:46 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 02:26:41 GMT;HttpOnly,JSESSIONID=E3DA550FA596557BE0F8317633292A61; Path=/jasperserver
+
+2016-04-13 10:26:47,925 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 10:26:48,853 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 10:26:49,589 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 11:53:27,711 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 11:53:34,510 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376898
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 03:53:33 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 03:53:27 GMT;HttpOnly,JSESSIONID=EC82330DF5A54DA42799DF903C1467D0; Path=/jasperserver
+
+2016-04-13 11:53:34,757 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 11:53:35,335 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 11:53:35,612 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 11:53:40,765 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 11:53:47,068 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376897
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 03:53:46 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 03:53:40 GMT;HttpOnly,JSESSIONID=BEF6B75F5FC0787FA70214535D20D165; Path=/jasperserver
+
+2016-04-13 11:58:01,158 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 11:58:07,607 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376897
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 03:58:06 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 03:58:00 GMT;HttpOnly,JSESSIONID=D8ECC76DBD01D26B078272C108501D4C; Path=/jasperserver
+
+2016-04-13 11:58:07,803 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 11:58:08,145 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 11:58:08,321 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 11:58:21,514 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 11:58:27,674 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376897
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 03:58:26 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 03:58:20 GMT;HttpOnly,JSESSIONID=C90AF0333253C5A5E2CD421DA8EDD864; Path=/jasperserver
+
+2016-04-13 11:58:48,206 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 11:58:54,465 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376898
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 03:58:53 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 03:58:47 GMT;HttpOnly,JSESSIONID=9E02524635DD965C4C296E965CBC9016; Path=/jasperserver
+
+2016-04-13 11:58:57,081 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 11:59:03,683 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376898
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 03:59:02 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 03:58:56 GMT;HttpOnly,JSESSIONID=7DF84EF653FC5BB540FFBF26436E76DF; Path=/jasperserver
+
+2016-04-13 12:00:38,277 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 12:00:44,804 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376897
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 04:00:43 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 04:00:37 GMT;HttpOnly,JSESSIONID=051D88F80D4274A3DFB74D8CDF8FA5CE; Path=/jasperserver
+
+2016-04-13 12:00:45,016 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 12:00:45,403 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 12:00:45,572 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 12:00:47,990 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?page=1
+1 > Accept: application/json
+
+2016-04-13 12:00:54,534 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376899
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 04:00:53 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 04:00:47 GMT;HttpOnly,JSESSIONID=75D66057DC52DE3813DC3051A18DA99C; Path=/jasperserver
+
+2016-04-13 13:05:50,260 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=ENGR.+JESREL+B.+MANGUBAT%3AAsst.+PPDC&DEPARTMENT_ID=2&UserId=67&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:05:56,857 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376509
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:05:55 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:05:49 GMT;HttpOnly,JSESSIONID=13B820D01F772FB276CE497E8ABC10B6; Path=/jasperserver
+
+2016-04-13 13:05:57,094 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:05:57,881 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:05:58,518 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:06:13,562 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+R.+NAMIT%3AManagement+and+Audit+Analyst+I&DEPARTMENT_ID=2&UserId=2&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:06:19,980 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376998
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:06:19 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:06:12 GMT;HttpOnly,JSESSIONID=2629028C05718BA4067C9903DE081DA5; Path=/jasperserver
+
+2016-04-13 13:06:46,298 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+R.+NAMIT%3AManagement+and+Audit+Analyst+I&DEPARTMENT_ID=2&UserId=2&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:06:52,694 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376998
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:06:51 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:06:45 GMT;HttpOnly,JSESSIONID=2BAFD3DF5F17B586A09E2396ACCC404A; Path=/jasperserver
+
+2016-04-13 13:10:23,739 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=MARIVIC+R.+MONTESCLAROS%3ASP+Member&DEPARTMENT_ID=2&UserId=103&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:10:29,947 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376583
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:10:28 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:10:22 GMT;HttpOnly,JSESSIONID=7EB61C2721E2815A7A31EBD878245092; Path=/jasperserver
+
+2016-04-13 13:10:30,211 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:10:30,825 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:10:31,062 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:10:35,616 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=MARIVIC+R.+MONTESCLAROS%3ASP+Member&DEPARTMENT_ID=2&UserId=103&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:10:41,733 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376583
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:10:40 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:10:34 GMT;HttpOnly,JSESSIONID=C3A7FD53A2FCE97E4CE376D5A78F3A5D; Path=/jasperserver
+
+2016-04-13 13:10:51,303 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JACQUELINE+JULIA+A.+LAGAMON%3ASupervising+Agriculturist&DEPARTMENT_ID=2&UserId=103&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:10:57,240 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376604
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:10:56 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:10:50 GMT;HttpOnly,JSESSIONID=D7979BAB5283BE20935861D1A83A965D; Path=/jasperserver
+
+2016-04-13 13:11:02,859 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JACQUELINE+JULIA+A.+LAGAMON%3ASupervising+Agriculturist&DEPARTMENT_ID=2&UserId=103&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:11:08,860 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376606
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:11:07 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:11:01 GMT;HttpOnly,JSESSIONID=E20BF2BAD5CB0C7F6C6DA88635A17DC5; Path=/jasperserver
+
+2016-04-13 13:13:39,140 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JAY+S.+ALBARECE%3ASP+Member+1st+District&DEPARTMENT_ID=2&UserId=103&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:13:45,492 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376587
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:13:44 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:13:38 GMT;HttpOnly,JSESSIONID=177C64618048D4EBA9713D51B6FBC1F6; Path=/jasperserver
+
+2016-04-13 13:13:45,686 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:13:46,681 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:13:47,007 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:15:17,968 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JANE+V.+MAGALLANES%3AOIC+Branch+Clerk+of+Court%2F+Clerk+III&DEPARTMENT_ID=2&UserId=81&DTR_YEAR=2016&page=1&DTR_MONTH=4
+1 > Accept: application/json
+
+2016-04-13 13:15:24,106 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376666
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:15:23 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:15:17 GMT;HttpOnly,JSESSIONID=CD97DD630830CD476DECD457B99683E0; Path=/jasperserver
+
+2016-04-13 13:15:24,311 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:15:24,546 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:15:24,792 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:26:02,151 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JACQUELINE+JULIA+A.+LAGAMON%3ASupervising+Agriculturist&Type=1&DEPARTMENT_ID=2&UserId=3&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 13:26:08,302 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 377057
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:26:07 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:26:01 GMT;HttpOnly,JSESSIONID=94D364FBC8DB5C67DD2EA6424BEFD256; Path=/jasperserver
+
+2016-04-13 13:26:08,508 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:26:08,713 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:26:08,933 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:27:59,134 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JANE+V.+MAGALLANES%3AOIC+Branch+Clerk+of+Court%2F+Clerk+III&Type=1&DEPARTMENT_ID=2&UserId=81&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 13:28:05,689 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376665
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:28:04 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:27:58 GMT;HttpOnly,JSESSIONID=42A4B08B5A43CA9991E806C03D0B18E0; Path=/jasperserver
+
+2016-04-13 13:28:05,894 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:28:06,114 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:28:06,315 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:29:03,481 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JANE+V.+MAGALLANES%3AOIC+Branch+Clerk+of+Court%2F+Clerk+III&Type=1&DEPARTMENT_ID=2&UserId=81&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 13:29:09,971 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376666
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:29:08 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:29:02 GMT;HttpOnly,JSESSIONID=F355CF8CDEE0EC307780026401087719; Path=/jasperserver
+
+2016-04-13 13:29:17,550 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JENICA+N.+MODEQUILLO%3AAdmin+Officer+IV&Type=2&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 13:29:23,690 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369288
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:29:22 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:29:16 GMT;HttpOnly,JSESSIONID=4A4E9DE0EC1390B05A48B8B6E435B4CE; Path=/jasperserver
+
+2016-04-13 13:29:27,831 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JENICA+N.+MODEQUILLO%3AAdmin+Officer+IV&Type=2&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-13 13:29:34,136 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369287
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:29:32 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:29:26 GMT;HttpOnly,JSESSIONID=E6E7F9D372A200F8FB92C762F3F47C15; Path=/jasperserver
+
+2016-04-13 13:30:47,938 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=Engr.+FREDOLFO+B.+PINTO%3AProvincial+Engineer&Type=1&DEPARTMENT_ID=2&UserId=10&DTR_YEAR=2016&DTR_MONTH=3&page=1
+1 > Accept: application/json
+
+2016-04-13 13:30:55,033 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 377491
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:30:53 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:30:47 GMT;HttpOnly,JSESSIONID=50300198A0F301E580D6654E7C2B7F40; Path=/jasperserver
+
+2016-04-13 13:30:55,208 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-13 13:30:55,451 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-13 13:30:55,731 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-13 13:31:11,864 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=Engr.+FREDOLFO+B.+PINTO%3AProvincial+Engineer&Type=1&DEPARTMENT_ID=2&UserId=10&DTR_YEAR=2016&DTR_MONTH=3&page=1
+1 > Accept: application/json
+
+2016-04-13 13:31:18,524 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 377491
+1 < Content-Type: application/pdf
+1 < Date: Wed, 13 Apr 2016 05:31:17 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Thu, 14-Apr-2016 05:31:10 GMT;HttpOnly,JSESSIONID=C19AC51D81D0792F562EAD4CAF93B8CE; Path=/jasperserver
+
+2016-04-18 08:25:06,442 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=ENGR.+JESREL+B.+MANGUBAT%3AAsst.+PPDC&Type=1&DEPARTMENT_ID=2&UserId=10&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-18 08:25:12,262 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 375881
+1 < Content-Type: application/pdf
+1 < Date: Mon, 18 Apr 2016 00:25:09 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Tue, 19-Apr-2016 00:25:04 GMT;HttpOnly,JSESSIONID=2A04830E3B0283D38164D6707EB820BB; Path=/jasperserver
+
+2016-04-18 08:25:12,566 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-18 08:25:13,270 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-18 08:25:13,623 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-18 08:25:18,234 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=ENGR.+JESREL+B.+MANGUBAT%3AAsst.+PPDC&Type=1&DEPARTMENT_ID=2&UserId=10&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-18 08:25:26,778 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 375881
+1 < Content-Type: application/pdf
+1 < Date: Mon, 18 Apr 2016 00:25:24 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Tue, 19-Apr-2016 00:25:15 GMT;HttpOnly,JSESSIONID=E2BDC071527F7CB8D962A5F0ADA3E3F5; Path=/jasperserver
+
+2016-04-18 10:49:07,914 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JAY+S.+ALBARECE%3ASP+Member+1st+District&Type=1&DEPARTMENT_ID=2&UserId=4&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-18 10:49:14,345 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376517
+1 < Content-Type: application/pdf
+1 < Date: Mon, 18 Apr 2016 02:49:11 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Tue, 19-Apr-2016 02:49:05 GMT;HttpOnly,JSESSIONID=99F4CDF29DDDBACA1DF833B483445258; Path=/jasperserver
+
+2016-04-18 10:49:14,666 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-18 10:49:15,114 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-18 10:49:15,376 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-19 10:15:40,261 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=HON.+ALEX+P.+CALINGASAN%3AVice+Governor&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:15:47,237 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376711
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:15:52 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:15:45 GMT;HttpOnly,JSESSIONID=2FCF7F69456DA2076473FB12A9476014; Path=/jasperserver
+
+2016-04-19 10:15:47,472 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-19 10:15:48,087 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-19 10:15:48,603 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-19 10:18:02,202 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=Engr.+FREDOLFO+B.+PINTO%3AProvincial+Engineer&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:18:08,337 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376719
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:18:13 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:18:07 GMT;HttpOnly,JSESSIONID=BFE6DD1758AE286DA1FC5935A661FE7A; Path=/jasperserver
+
+2016-04-19 10:18:29,866 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=Engr.+FREDOLFO+B.+PINTO%3AProvincial+Engineer&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:18:37,659 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376719
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:18:42 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:18:35 GMT;HttpOnly,JSESSIONID=8F5128FFBBF1DE30C03BD44F37991D69; Path=/jasperserver
+
+2016-04-19 10:32:21,916 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=HANSEL+T.+ECHAVEZ%3ASupervising+Administrative+Officer&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:32:28,336 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376725
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:32:33 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:32:27 GMT;HttpOnly,JSESSIONID=71FB021AA544717224AEC99B093D4E5E; Path=/jasperserver
+
+2016-04-19 10:32:28,674 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-19 10:32:29,089 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-19 10:32:29,432 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-19 10:32:56,867 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=HANSEL+T.+ECHAVEZ%3ASupervising+Administrative+Officer&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:33:02,572 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376726
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:33:07 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:33:02 GMT;HttpOnly,JSESSIONID=74085E6B1B5513F5F0A959DC55F05D75; Path=/jasperserver
+
+2016-04-19 10:36:30,834 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+R.+NAMIT%3AManagement+and+Audit+Analyst+I&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:36:36,932 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376716
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:36:42 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:36:36 GMT;HttpOnly,JSESSIONID=F9FFFE5CD22BBB0624DA33A3DBC20C87; Path=/jasperserver
+
+2016-04-19 10:36:37,174 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-19 10:36:37,374 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-19 10:36:37,698 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-19 10:36:43,416 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+R.+NAMIT%3AManagement+and+Audit+Analyst+I&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:36:49,515 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376716
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:36:54 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:36:48 GMT;HttpOnly,JSESSIONID=F3024961112E7D73FDE105ADA5B0048D; Path=/jasperserver
+
+2016-04-19 10:36:50,358 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+R.+NAMIT%3AManagement+and+Audit+Analyst+I&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:36:56,144 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376716
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:37:01 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:36:55 GMT;HttpOnly,JSESSIONID=B49533E3311919D6EF7C3885F982C53E; Path=/jasperserver
+
+2016-04-19 10:45:22,493 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=Engr.+MARVELA+C.+ESTRADA%3AEngr.+IV+%2F+Chief%2C+Construction+Division&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:45:31,211 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376734
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:45:35 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:45:27 GMT;HttpOnly,JSESSIONID=3A87F4804915CDDA079E849D9B87B39B; Path=/jasperserver
+
+2016-04-19 10:45:32,092 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-04-19 10:45:40,227 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-04-19 10:45:40,778 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-04-19 10:45:48,479 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=Engr.+MARVELA+C.+ESTRADA%3AEngr.+IV+%2F+Chief%2C+Construction+Division&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-04-19 10:45:55,506 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 376733
+1 < Content-Type: application/pdf
+1 < Date: Tue, 19 Apr 2016 02:46:00 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Wed, 20-Apr-2016 02:45:53 GMT;HttpOnly,JSESSIONID=1E5503BA62EE39FB8EC7A73D5177D532; Path=/jasperserver
+
+2016-05-02 10:48:26,792 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=CECILLE+M.+EGNAR%3ASr.+Environmental+Management+Specialist&Type=2&DEPARTMENT_ID=2&UserId=3&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-05-02 10:48:34,635 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369294
+1 < Content-Type: application/pdf
+1 < Date: Mon, 02 May 2016 02:48:35 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Tue, 3-May-2016 02:48:27 GMT;HttpOnly,JSESSIONID=F8AFEC098DBC4077497C64A6C8252D2F; Path=/jasperserver
+
+2016-05-02 10:48:34,929 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2016-05-02 10:48:35,411 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2016-05-02 10:48:35,768 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2016-05-02 10:48:56,955 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=CLEOFE+B.+AWITEN%3ASupply+Officer+II&Type=3&DEPARTMENT_ID=2&UserId=67&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-05-02 10:49:04,607 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369290
+1 < Content-Type: application/pdf
+1 < Date: Mon, 02 May 2016 02:49:05 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Tue, 3-May-2016 02:48:57 GMT;HttpOnly,JSESSIONID=C6117404AAE11F4C999DB5ADBE2F1F28; Path=/jasperserver
+
+2016-05-02 10:49:11,651 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://192.168.50.2:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=CLEOFE+B.+AWITEN%3ASupply+Officer+II&Type=3&DEPARTMENT_ID=2&UserId=81&DTR_YEAR=2016&DTR_MONTH=4&page=1
+1 > Accept: application/json
+
+2016-05-02 10:49:26,384 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: no-cache
+1 < Content-Length: 369408
+1 < Content-Type: application/pdf
+1 < Date: Mon, 02 May 2016 02:49:27 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 CST
+1 < P3P: CP="ALL"
+1 < Pragma: No-cache
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Tue, 3-May-2016 02:49:12 GMT;HttpOnly,JSESSIONID=C7F60B5A4DEA0EB9B0897483E0A54C00; Path=/jasperserver
+
+2017-02-23 11:42:02,542 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://172.16.2.50:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+S.+VICTORIA%3AITO+II%2F+PICTD+Head&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2017&DTR_MONTH=2&page=1
+1 > Accept: application/json
+
+2017-02-23 11:42:09,168 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: private
+1 < Content-Disposition: attachment; filename="dtr1_3_2_1_1_1_4_4.pdf"
+1 < Content-Length: 372240
+1 < Content-Type: application/pdf
+1 < Date: Thu, 23 Feb 2017 03:42:14 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 PHT
+1 < output-final: true
+1 < P3P: CP="ALL"
+1 < report-pages: 1
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Fri, 24-Feb-2017 03:42:07 GMT;Path=/jasperserver/;HttpOnly,JSESSIONID=BF0E972D7B64BA5D4C4F1990AC3241A1; Path=/jasperserver/; HttpOnly
+
+2017-02-23 11:42:09,344 class org.icepdf.core.pobjects.Document <clinit> - PDF write support was not found on the class path
+2017-02-23 11:42:09,704 class org.icepdf.core.pobjects.Catalog <clinit> - ICEsoft ICEpdf Core 6.1.0 
+2017-02-23 11:42:09,935 class org.icepdf.core.pobjects.ImageStream <clinit> - Levigo JBIG2 image library was not found on classpath
+2017-02-23 11:42:13,369 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Sending client request on thread AWT-EventQueue-0
+1 > GET http://172.16.2.50:8060/jasperserver/rest_v2/reports/dtr/dtr1_3_2_1_1_1_4_4.pdf?Supervisor=JOEL+S.+VICTORIA%3AITO+II%2F+PICTD+Head&Type=1&DEPARTMENT_ID=2&UserId=1&DTR_YEAR=2017&DTR_MONTH=2&page=1
+1 > Accept: application/json
+
+2017-02-23 11:42:19,389 com.jaspersoft.jasperserver.jaxrs.client.core.SessionStorage log - 1 * Client response received on thread AWT-EventQueue-0
+1 < 200
+1 < Cache-Control: private
+1 < Content-Disposition: attachment; filename="dtr1_3_2_1_1_1_4_4.pdf"
+1 < Content-Length: 372240
+1 < Content-Type: application/pdf
+1 < Date: Thu, 23 Feb 2017 03:42:24 GMT
+1 < Expires: Thu, 01 Jan 1970 08:00:00 PHT
+1 < output-final: true
+1 < P3P: CP="ALL"
+1 < report-pages: 1
+1 < Server: Apache-Coyote/1.1
+1 < Set-Cookie: userLocale=en_US;Expires=Fri, 24-Feb-2017 03:42:18 GMT;Path=/jasperserver/;HttpOnly,JSESSIONID=2745B2D620CF5EA3BCC017DD48E868E7; Path=/jasperserver/; HttpOnly
+

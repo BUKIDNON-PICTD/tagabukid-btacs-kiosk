@@ -1,0 +1,40 @@
+<workunit extends="wtemplates/ExplorerViewController.xml" serviceName="BTACSReconciliationListService" 
+     allowOpen="true" allowCreate="false" allowDelete="true" autoSelect="true" defaultFileType="reconciliationitem">
+    <invokers>
+        <invoker folderid="/explorer/txn/btacstransaction" action="init" caption="Reconciliation Item List"  index="3" />
+        <invoker folderid="/home/btacs" action="init" caption="Reconciliation Item List"  index="3" />
+    </invokers>
+     <code>
+    <![CDATA[
+    import com.rameses.rcp.common.*;
+    import com.rameses.rcp.annotations.*;
+    import com.rameses.osiris2.client.*;
+    import com.rameses.osiris2.common.*;
+
+    class BTACSReconciliationListController extends ExplorerViewController {
+        
+        def params = [:]; 
+        
+        public void init() {
+            // params.yearcreated = new java.sql.Date(System.currentTimeMillis()).toString().split("-")[0]; 
+            //params.dtfrom = new java.sql.Date(System.currentTimeMillis()).toString().split("-")[0] + "-01-01";
+            //params.dtto = new java.sql.Date(System.currentTimeMillis());  
+        } 
+        
+        //def getLookupDocumentType(){
+        //    return Inv.lookupOpener('documenttype:lookup',[
+        //                onselect :{
+        //                    params.documenttype = it;
+        //                },
+        //            ])
+        //}
+        
+        public void beforeFetchList( Map qry ) { 
+            if ( params ) qry.putAll( params ); 
+        }
+    }  
+    ]]> 
+    </code>
+
+   
+</workunit>

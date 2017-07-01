@@ -1,0 +1,13 @@
+<workunit>
+    <invokers>
+<!--        <invoker type="home.action" caption="BTACS Reconciliation" action="init" role="MASTER" />
+         <invoker type="formActions" action="_close" caption="Cancel" mnemonic="c" immediate="true" visibleWhen="#{mode.matches('init|read')}" /> 
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c" immediate="true" visibleWhen="#{mode == 'completed'}"/> 
+        <invoker type="formActions" action="doNext" caption="Next" mnemonic="n" visibleWhen="#{mode=='init'}" />
+        <invoker type="formActions" action="doImport" caption="Import" mnemonic="i" visibleWhen="#{mode=='read'}" />-->
+    </invokers>
+    <code class="tagabukid.btacs.models.BTACSExcelImport"/>
+    <pages>
+        <page template="tagabukid.btacs.views.BTACSReconciliationImport"/>
+    </pages>
+</workunit>
