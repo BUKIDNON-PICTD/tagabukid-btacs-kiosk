@@ -28,6 +28,7 @@ public class BTACSReconciliationController {
     def task;
     def loghandler = new TextWriter();
     def selectedEmployee;
+    def searchText;
     def df = new SimpleDateFormat("yyyy-MM-dd");
     def formatDate = { o->
         if(o instanceof java.util.Date) {
@@ -42,13 +43,12 @@ public class BTACSReconciliationController {
         entity = [:];
         entity.txndate = dtsvc.getServerDate();
         entity.year = dtsvc.getYear(entity.txndate);
-        entity.preparedbyname = OsirisContext.env.FULLNAME;
         entity.recordlog = [
             createdbyuserid : OsirisContext.env.USERID,
             createdbyuser : OsirisContext.env.FULLNAME,
             datecreated : entity.txndate,
         ]
-        entity.txnno = null;
+        entity.txnno = "";
         employees = [];
         reconciliationitems = [];
         completed = false;
@@ -123,6 +123,10 @@ public class BTACSReconciliationController {
         mode = "PROCESS";
         title = "Reconcile blank logs"
         reconciliationitems = svc.getReconciliationItems(entity);
+        
+        if(reconciliationitems.size == 0)
+        throw new Exception("No items for reconciliation");
+        
         employees = reconciliationitems.groupBy({[userid:it.userid,name:it.name,gender:it.gender,jobtitle:it.jobtitle]}).collect{k,v->
             [
                 userid:k.userid,
@@ -132,8 +136,7 @@ public class BTACSReconciliationController {
                 items:v
             ]
         }
-        if(reconciliationitems.size == 0)
-        throw new Exception("No items for reconciliation");
+       
         
         employeeListHandler.reload();
         listHandler.reload();
@@ -182,12 +185,34 @@ public class BTACSReconciliationController {
     
     def onerror = {msg ->
         task = null;
+        
         loghandler.writeln(msg);
         mode = "PROCESS"
-        return "process"
         binding?.refresh('.*');
+        MsgBox.alert("msg");
+        return "process"
+      
     }   
-  
+    
+    void searchEmployee(){
+        if(searchText){
+            employees = employees.findAll{it.name.contains(searchText)}
+//            println searchText
+            
+        }else{
+            employees = reconciliationitems.groupBy({[userid:it.userid,name:it.name,gender:it.gender,jobtitle:it.jobtitle]}).collect{k,v->
+            [
+                userid:k.userid,
+                name:k.name,
+                gender:k.gender,
+                jobtitle:k.jobtitle,
+                items:v
+            ]
+            }
+        }
+        employeeListHandler.reload();
+        
+    }
     
     def close(){
         return '_close'
