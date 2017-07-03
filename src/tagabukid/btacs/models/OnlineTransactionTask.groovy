@@ -24,7 +24,7 @@ public class OnlineTransactionTask implements Runnable{
         loghandler.writeln('Initializing...' + reconciliationitems.size());
         loghandler.writeln('Start Processing Reconciliation ');
         loghandler.writeln('Date\t:' + entity.txndate);
-        loghandler.writeln('Prepared By\t:' + entity.preparedbyname);
+        loghandler.writeln('Prepared By\t:' + entity.recordlog.createdbyuser);
 
         txnSvc.processReconciliation(entity,reconciliationitems,processreconciliationAsyncHandler);
 

@@ -48,7 +48,7 @@ public class BTACSReconciliationController {
             createdbyuser : OsirisContext.env.FULLNAME,
             datecreated : entity.txndate,
         ]
-        entity.txnno = "";
+        entity.txnno = " ";
         employees = [];
         reconciliationitems = [];
         completed = false;
