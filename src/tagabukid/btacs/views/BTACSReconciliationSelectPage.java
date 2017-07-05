@@ -38,17 +38,21 @@ public class BTACSReconciliationSelectPage extends javax.swing.JPanel {
         xComboBox1 = new com.rameses.rcp.control.XComboBox();
 
         xLookupField1.setCaption("Select Office");
+        xLookupField1.setCaptionWidth(100);
         xLookupField1.setExpression("#{entity.office.DEPTNAME}");
         xLookupField1.setHandler("lookupOffice");
         xLookupField1.setName("entity.office"); // NOI18N
         xLookupField1.setPreferredSize(new java.awt.Dimension(0, 20));
+        xLookupField1.setRequired(true);
         xFormPanel1.add(xLookupField1);
 
         xComboBox1.setCaption("Month");
+        xComboBox1.setCaptionWidth(100);
         xComboBox1.setExpression("#{item.caption}");
         xComboBox1.setItems("monthList");
         xComboBox1.setName("entity.month"); // NOI18N
         xComboBox1.setPreferredSize(new java.awt.Dimension(100, 20));
+        xComboBox1.setRequired(true);
         xFormPanel1.add(xComboBox1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

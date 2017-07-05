@@ -1,8 +1,0 @@
-<workunit extends="com/rameses/seti2/templates/CrudList.xml" allowOpen="false" allowCreate="false" allowDelete="false" allowPrint="false"
-    schemaName="btacsreconciliationitems">
-    <invokers>
-        <invoker folderid="/explorer/txn/btacstransaction" action="init" caption="Reconciliation Item List"  index="3" />
-        <invoker folderid="/home/btacs" action="init" caption="Reconciliation Item List"  index="3" />
-    </invokers>
-   
-</workunit>

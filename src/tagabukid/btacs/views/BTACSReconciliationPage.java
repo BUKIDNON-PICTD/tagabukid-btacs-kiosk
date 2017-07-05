@@ -124,7 +124,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"editable", true}
                 , new Object[]{"editableWhen", null}
                 , new Object[]{"textCase", com.rameses.rcp.constant.TextCase.NONE}
-                , new Object[]{"typeHandler", new com.rameses.rcp.common.ComboBoxColumnHandler("leaveClass", null, null)}
+                , new Object[]{"typeHandler", new com.rameses.rcp.common.LookupColumnHandler("#{item.reason}", "reasonLookup")}
             }),
             new com.rameses.rcp.common.Column(new Object[]{
                 new Object[]{"name", "approved"}
@@ -144,7 +144,6 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
         xDataTable1.setDepends(new String[] {"selectedEmployee"});
         xDataTable1.setDynamic(true);
         xDataTable1.setHandler("listHandler");
-        xDataTable1.setMultiSelectName("");
         xDataTable1.setName("selectedItem"); // NOI18N
 
         com.rameses.rcp.control.border.XTitledBorder xTitledBorder2 = new com.rameses.rcp.control.border.XTitledBorder();
@@ -159,9 +158,9 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
 
         xLabel1.setBorder(new com.rameses.rcp.control.border.XLineBorder());
         xLabel1.setCaption("Reconciliation No.");
+        xLabel1.setExpression("#{entity.txnno}");
         xLabel1.setOpaque(true);
         xLabel1.setPreferredSize(new java.awt.Dimension(0, 16));
-        xLabel1.setText("#{entity.txnno}");
         xFormPanel1.add(xLabel1);
 
         xLabel7.setBorder(new com.rameses.rcp.control.border.XLineBorder());

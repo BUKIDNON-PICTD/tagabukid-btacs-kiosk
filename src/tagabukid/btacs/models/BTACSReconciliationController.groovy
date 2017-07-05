@@ -29,7 +29,9 @@ public class BTACSReconciliationController {
     def loghandler = new TextWriter();
     def selectedEmployee;
     def searchText;
+    def leaveclass
     def df = new SimpleDateFormat("yyyy-MM-dd");
+    def selectedItem;
     def formatDate = { o->
         if(o instanceof java.util.Date) {
             return df.parse( df.format( o ));
@@ -51,6 +53,7 @@ public class BTACSReconciliationController {
         entity.txnno = " ";
         employees = [];
         reconciliationitems = [];
+        leaveclass = svc.getLeaveClass()
         completed = false;
 //        return 'default';
     }
@@ -68,8 +71,17 @@ public class BTACSReconciliationController {
             ])
     }
     
-    def getLeaveClass(){
-        return svc.getLeaveClass().collect{it.LeaveName}
+    def getReasonLookup(){
+        return Inv.lookupOpener('btacsreason:lookup',[
+                onselect :{o->
+                    //employees.each{item->
+                        selectedItem.reason = o.reason
+                    //}
+                    if (selectedItem.reason != null){
+                        selectedItem.approved = true;
+                    }
+                },
+            ])
     }
     
     def getPenaltyList(){
@@ -91,9 +103,10 @@ public class BTACSReconciliationController {
         }
 //        ,
 //        onColumnUpdate:{item,colName ->
-//            reconciliationitems.each{y ->
-//                if (item.din == y.din){
-//                    y.message = item.remarks
+//            if (colName == 'reason') { 
+//                println item
+//                if (item.reason != null){
+//                    item.approved = true;
 //                }
 //            }
 //        }
@@ -109,14 +122,6 @@ public class BTACSReconciliationController {
 //            }
             return false;
         }
-//        ,
-//        onColumnUpdate:{item,colName ->
-//            reconciliationitems.each{y ->
-//                if (item.din == y.din){
-//                    y.message = item.remarks
-//                }
-//            }
-//        }
     ] as EditorListModel
     
     def loadreconciliationinfo(){
@@ -127,15 +132,7 @@ public class BTACSReconciliationController {
         if(reconciliationitems.size == 0)
         throw new Exception("No items for reconciliation");
         
-        employees = reconciliationitems.groupBy({[userid:it.userid,name:it.name,gender:it.gender,jobtitle:it.jobtitle]}).collect{k,v->
-            [
-                userid:k.userid,
-                name:k.name,
-                gender:k.gender,
-                jobtitle:k.jobtitle,
-                items:v
-            ]
-        }
+        loadlist()
        
         
         employeeListHandler.reload();
@@ -185,33 +182,39 @@ public class BTACSReconciliationController {
     
     def onerror = {msg ->
         task = null;
-        
         loghandler.writeln(msg);
-        mode = "PROCESS"
         binding?.refresh('.*');
-        MsgBox.alert("msg");
-        return "process"
-      
+        returntoprocessing();
+        MsgBox.alert("Error in Processing");
     }   
+    
+    def returntoprocessing(){
+        mode = "PROCESS";
+        title = "Reconcile blank logs"
+        return "process";
+    }
     
     void searchEmployee(){
         if(searchText){
+            loadlist()
             employees = employees.findAll{it.name.contains(searchText)}
-//            println searchText
-            
         }else{
-            employees = reconciliationitems.groupBy({[userid:it.userid,name:it.name,gender:it.gender,jobtitle:it.jobtitle]}).collect{k,v->
-            [
-                userid:k.userid,
-                name:k.name,
-                gender:k.gender,
-                jobtitle:k.jobtitle,
-                items:v
-            ]
-            }
+            loadlist()
         }
         employeeListHandler.reload();
         
+        
+    }
+    void loadlist(){
+        employees = reconciliationitems.groupBy({[userid:it.userid,name:it.name,gender:it.gender,jobtitle:it.jobtitle]}).collect{k,v->
+        [
+            userid:k.userid,
+            name:k.name,
+            gender:k.gender,
+            jobtitle:k.jobtitle,
+            items:v
+        ]
+        }
     }
     
     def close(){

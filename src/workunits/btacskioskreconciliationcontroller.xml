@@ -4,6 +4,7 @@
         <invoker folderid="/home/btacs" caption="BTACS Reconciliation" action="init" role="MASTER" />
         <invoker type="formActions" caption="Next" mnemonic="n" shortcut="F1" action="loadreconciliationinfo" visibleWhen="#{mode == 'INIT'}"/>
         <invoker type="formActions" caption="Reset" action="createnew" visibleWhen="#{mode == 'PROCESS'}"/>
+        <invoker type="formActions" caption="Back" mnemonic="b" action="returntoprocessing" visibleWhen="#{mode == 'processing'}"/>
         <invoker type="formActions" caption="Save" mnemonic="s" shortcut="F2" action="save" visibleWhen="#{mode == 'PROCESS'}"/>
         
         <invoker type="formActions" action="print" caption="Print" mnemonic="p" visibleWhen="#{mode=='completed' &amp;&amp;completed}" />
