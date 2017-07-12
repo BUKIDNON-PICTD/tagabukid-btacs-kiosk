@@ -1,0 +1,24 @@
+<folders>
+    <folder id="explorer">
+        <folder id="txn">
+            <folder id="btacstransaction" caption="BTACS" index="1"/>
+        </folder>
+        <folder id="master">
+            <folder id="btacsmaster" caption="BTACS Master" index="1"/>
+        </folder>
+        <folder id="report">
+            <folder id="btacsreport" caption="BTACS" index="1">
+                <!--<folder id="btacs" caption="Admin" index="1"/>-->
+            </folder>
+        </folder>
+<!--        <folder id="rulemgmt" caption="Rule Management">
+            <folder id="subay" caption="Subay" index="5"/>
+        </folder>  -->
+    </folder> 
+    <folder id="home">
+        <folder id="btacs" caption="BTACS">
+            <folder id="master" caption="Master File" index="5"/>
+<!--            <folder id="subaycabinet" caption="Subay Cabinet" index="5"/>-->
+        </folder>
+    </folder>
+</folders>

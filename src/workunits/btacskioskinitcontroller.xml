@@ -1,0 +1,12 @@
+<workunit>
+    <invokers>
+        <invoker folderid="/explorer/txn/btacstransaction" caption="BTACS Kiosk" action="init" role="MASTER" />
+        <invoker folderid="/home/btacs" caption="BTACS Kiosk" action="init" role="MASTER" />
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c" />
+        <invoker type="formActions" action="back" caption="Back" mnemonic="b" />
+    </invokers>
+    <code class="tagabukid.btacs.models.BTACSKioskController"/>
+    <pages>
+        <page template="tagabukid.btacs.views.BTACSKioskPage"/>
+    </pages>
+</workunit>

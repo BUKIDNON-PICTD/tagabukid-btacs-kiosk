@@ -1,0 +1,69 @@
+<!--<workunit extends="com/rameses/seti2/templates/CrudList.xml" allowOpen="true" allowCreate="false" allowDelete="true" allowPrint="false"
+    schemaName="CHECKINOUT"
+    cols="user.NAME,user.GENDER,user.TITLE,user.department.DEPTNAME,CHECKTIME,CHECKTYPE,Memoinfo,BRN"
+    orderBy="user.NAME, CHECKTIME DESC">
+    <invokers>
+        <invoker folderid="/explorer/txn/btacstransaction" action="init" caption="Check IN/OUT List"  index="4" />
+        <invoker folderid="/home/btacs" action="init" caption="Check IN/OUT List"  index="4" />
+    </invokers>
+   
+</workunit>-->
+<workunit extends="wtemplates/ListController.xml" >
+    <invokers>
+       <invoker folderid="/explorer/txn/btacstransaction" action="init" caption="Check IN/OUT List" index="4" role="RECONCILIATION" />
+       <invoker folderid="/home/btacs" action="init" caption="Check IN/OUT List" index="4" role="RECONCILIATION" /> 
+       <invoker type="formActions" caption="Delete" action="deleteLog" icon="images/toolbars/trash.png"
+                visibleWhen="#{selectedEntity != null &amp;&amp; selectedEntity.BRN != null}"/> 
+    </invokers>
+    
+    <code>
+    <![CDATA[
+    import com.rameses.rcp.common.*;
+    import com.rameses.rcp.annotations.*;
+    import com.rameses.osiris2.client.*;
+    import com.rameses.osiris2.common.*;
+
+    class BTACSCHECKINOUTListController extends ListController {
+        
+        @Service("BTACSCHECKINOUTService")
+        def svc
+        
+        @FormTitle
+        def title = 'Check IN/OUT List';
+
+        String serviceName  = 'BTACSCHECKINOUTService';
+        String formName     = 'CHECKINOUT:list'
+        String entityName = 'CHECKINOUT';
+        boolean allowOpen = false;
+        boolean allowCreate = false;
+        boolean allowDelete = true;
+    
+        def params = [:]; 
+        
+        public void init() {
+            // params.yearcreated = new java.sql.Date(System.currentTimeMillis()).toString().split("-")[0]; 
+            params.dtfrom = new java.sql.Date(System.currentTimeMillis()).toString().split("-")[0] + "-01-01";
+            params.dtto = new java.sql.Date(System.currentTimeMillis());  
+        } 
+        
+        public void beforeFetchList( Map qry ) { 
+            if ( params ) qry.putAll( params ); 
+        }
+        
+         
+        def deleteLog() {
+            if (!MsgBox.confirm('You are about to remove this message. Continue?')) return;
+            
+            svc.removeLog(selectedEntity);
+            search();
+            MsgBox.alert("Log Deleted");
+        }
+    
+    }  
+    ]]> 
+    </code>
+
+    <pages>
+        <page name="queryform" template="tagabukid.btacs.views.TagabukidSubayListQueryForm"/>
+    </pages>
+</workunit>

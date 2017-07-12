@@ -1,0 +1,37 @@
+<workunit extends="wtemplates/LookupController.xml">
+    
+    <invokers>
+        
+        <invoker type="btacsreason:lookup" caption="Reason Lookup" target="popup" > </invoker>
+        
+    </invokers>
+     <code>
+
+        import com.rameses.rcp.common.*
+        import com.rameses.rcp.annotations.*
+        import com.rameses.osiris2.client.*
+        import com.rameses.osiris2.common.*
+
+        class BTACSReasonLookupController extends LookupController
+        {
+            //@Service("BTACSReconciliationService")
+            //def svc
+
+            def state;
+         
+            @Caller
+            def caller
+
+            Column[] getColumns() {
+                return [
+                    new Column(name:"reason", caption:"Reason", width:250),
+                ]
+            }
+
+            List fetchList( Map params ) { 
+                return caller.leaveclass.findAll({it.LeaveName.contains(params.searchtext)}).collect{[reason:it.LeaveName]}
+            }
+        }  
+
+    </code>
+</workunit>

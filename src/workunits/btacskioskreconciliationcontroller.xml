@@ -1,0 +1,19 @@
+<workunit>
+    <invokers>
+        <invoker folderid="/explorer/txn/btacstransaction" caption="Manual Reconciliation" action="init" role="RECONCILIATION" />
+        <invoker folderid="/home/btacs" caption="Manual Reconciliation" action="init" role="RECONCILIATION" />
+        <invoker type="formActions" caption="Next" mnemonic="n" shortcut="F1" action="loadreconciliationinfo" visibleWhen="#{mode == 'INIT'}"/>
+        <invoker type="formActions" caption="Reset" action="createnew" visibleWhen="#{mode == 'PROCESS'}"/>
+        <invoker type="formActions" caption="Back" mnemonic="b" action="returntoprocessing" visibleWhen="#{mode == 'processing'}"/>
+        <invoker type="formActions" caption="Save" mnemonic="s" shortcut="F2" action="save" visibleWhen="#{mode == 'PROCESS'}"/>
+        
+        <invoker type="formActions" action="print" caption="Print" mnemonic="p" visibleWhen="#{mode=='completed' &amp;&amp;completed}" />
+        <invoker type="formActions" action="createnew" caption="New" visibleWhen="#{mode=='completed' &amp;&amp; completed}" mnemonic="n"/>
+    </invokers>
+    <code class="tagabukid.btacs.models.BTACSReconciliationController"/>
+    <pages>
+        <page template="tagabukid.btacs.views.BTACSReconciliationSelectPage"/>
+        <page name="process" template="tagabukid.btacs.views.BTACSReconciliationPage"/>
+        <page name="completed" template="tagabukid.btacs.views.BTACSReconciliationInfoPage"/>
+    </pages>
+</workunit>
