@@ -79,7 +79,7 @@ public class BTACSReconciliationController {
                     //}
                     if (selectedItem.reason != null){
                         selectedItem.approved = true;
-                        if (selectedItem.reason == 'OVERTIME'){
+                        if (selectedItem.reason == 'OVERTIME' || selectedItem.reason == 'UNDERTIME'){
                             if (selectedItem.DateLogin == null) { 
                                 selectedItem.NewDateLogin = true
                                 selectedItem.DateLogin = selectedItem.StartTime

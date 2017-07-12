@@ -96,7 +96,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"resizable", true}
                 , new Object[]{"nullWhenEmpty", true}
                 , new Object[]{"editable", true}
-                , new Object[]{"editableWhen", "#{item.reason == 'OVERTIME' && item.NewDateLogin == true}"}
+                , new Object[]{"editableWhen", "#{item.NewDateLogin == true}"}
                 , new Object[]{"textCase", com.rameses.rcp.constant.TextCase.NONE}
                 , new Object[]{"typeHandler", new com.rameses.rcp.common.TextColumnHandler()}
             }),
@@ -110,7 +110,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"resizable", true}
                 , new Object[]{"nullWhenEmpty", true}
                 , new Object[]{"editable", true}
-                , new Object[]{"editableWhen", "#{item.reason == 'OVERTIME' && item.NewDateLogout == true}"}
+                , new Object[]{"editableWhen", "#{item.NewDateLogout == true}"}
                 , new Object[]{"textCase", com.rameses.rcp.constant.TextCase.NONE}
                 , new Object[]{"typeHandler", new com.rameses.rcp.common.TextColumnHandler()}
             }),
