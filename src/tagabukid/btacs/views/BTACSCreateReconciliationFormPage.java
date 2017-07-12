@@ -15,12 +15,12 @@ import com.rameses.rcp.ui.annotations.Template;
  */
 @StyleSheet
 @Template({FormPage.class})
-public class BTACSReconciliationPage extends javax.swing.JPanel {
+public class BTACSCreateReconciliationFormPage extends javax.swing.JPanel {
 
     /**
      * Creates new form BTACSReconciliationPage
      */
-    public BTACSReconciliationPage() {
+    public BTACSCreateReconciliationFormPage() {
         initComponents();
     }
 
@@ -95,8 +95,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"required", false}
                 , new Object[]{"resizable", true}
                 , new Object[]{"nullWhenEmpty", true}
-                , new Object[]{"editable", true}
-                , new Object[]{"editableWhen", "#{item.reason == 'OVERTIME' && item.NewDateLogin == true}"}
+                , new Object[]{"editable", false}
                 , new Object[]{"textCase", com.rameses.rcp.constant.TextCase.NONE}
                 , new Object[]{"typeHandler", new com.rameses.rcp.common.TextColumnHandler()}
             }),
@@ -109,8 +108,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"required", false}
                 , new Object[]{"resizable", true}
                 , new Object[]{"nullWhenEmpty", true}
-                , new Object[]{"editable", true}
-                , new Object[]{"editableWhen", "#{item.reason == 'OVERTIME' && item.NewDateLogout == true}"}
+                , new Object[]{"editable", false}
                 , new Object[]{"textCase", com.rameses.rcp.constant.TextCase.NONE}
                 , new Object[]{"typeHandler", new com.rameses.rcp.common.TextColumnHandler()}
             }),
@@ -129,7 +127,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"typeHandler", new com.rameses.rcp.common.LookupColumnHandler("#{item.reason}", "reasonLookup")}
             }),
             new com.rameses.rcp.common.Column(new Object[]{
-                new Object[]{"name", "approved"}
+                new Object[]{"name", "attachment"}
                 , new Object[]{"caption", "Approved"}
                 , new Object[]{"width", 100}
                 , new Object[]{"minWidth", 0}
@@ -140,7 +138,7 @@ public class BTACSReconciliationPage extends javax.swing.JPanel {
                 , new Object[]{"editable", true}
                 , new Object[]{"editableWhen", "#{item.reason != null}"}
                 , new Object[]{"textCase", com.rameses.rcp.constant.TextCase.NONE}
-                , new Object[]{"typeHandler", new com.rameses.rcp.common.CheckBoxColumnHandler(java.lang.Boolean.class, true, false)}
+                , new Object[]{"typeHandler", new com.rameses.rcp.common.LookupColumnHandler(null, "addAttachment")}
             })
         });
         xDataTable1.setDepends(new String[] {"selectedEmployee"});

@@ -10,8 +10,8 @@
 </workunit>-->
 <workunit extends="wtemplates/ListController.xml" >
     <invokers>
-       <invoker folderid="/explorer/txn/btacstransaction" action="init" caption="Check IN/OUT List" index="4" />
-       <invoker folderid="/home/btacs" action="init" caption="Check IN/OUT List" index="4" /> 
+       <invoker folderid="/explorer/txn/btacstransaction" action="init" caption="Check IN/OUT List" index="4" role="RECONCILIATION" />
+       <invoker folderid="/home/btacs" action="init" caption="Check IN/OUT List" index="4" role="RECONCILIATION" /> 
        <invoker type="formActions" caption="Delete" action="deleteLog" icon="images/toolbars/trash.png"
                 visibleWhen="#{selectedEntity != null &amp;&amp; selectedEntity.BRN != null}"/> 
     </invokers>

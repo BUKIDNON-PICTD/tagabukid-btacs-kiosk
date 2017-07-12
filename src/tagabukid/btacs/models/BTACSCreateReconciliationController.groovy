@@ -79,19 +79,18 @@ public class BTACSReconciliationController {
                     //}
                     if (selectedItem.reason != null){
                         selectedItem.approved = true;
-                        if (selectedItem.reason == 'OVERTIME'){
-                            if (selectedItem.DateLogin == null) { 
-                                selectedItem.NewDateLogin = true
-                                selectedItem.DateLogin = selectedItem.StartTime
-                            } 
-                            if (selectedItem.DateLogout == null) { 
-                                selectedItem.NewDateLogout = true
-                                selectedItem.DateLogout = selectedItem.EndTime
-                            } 
-                        }
                     }
                 },
             ])
+    }
+    
+    def getAddAttachment(){
+        return InvokerUtil.lookupOpener('upload:attachment', [
+                entity : entity,
+                afterupload: {
+                    loadAttachments();
+                }
+            ]);
     }
     
     def getPenaltyList(){
@@ -102,9 +101,7 @@ public class BTACSReconciliationController {
         return dtsvc.getMonths();
     }
     def listHandler = [
-        fetchList : { 
-            return selectedEmployee?.items 
-        },
+        fetchList : { return selectedEmployee?.items },
         onRemoveItem : {
 //            if (MsgBox.confirm('Delete item?')){                
 //                document.remove(it)
@@ -115,12 +112,12 @@ public class BTACSReconciliationController {
         }
 //        ,
 //        onColumnUpdate:{item,colName ->
-//            if (colName == 'DateLogin') { 
-//                selectedItem.NewDateLogin = true
-//            } 
-//            if (colName == 'DateLogout') { 
-//                selectedItem.NewDateLogout = true
-//            } 
+//            if (colName == 'reason') { 
+//                println item
+//                if (item.reason != null){
+//                    item.approved = true;
+//                }
+//            }
 //        }
     ] as EditorListModel
     
